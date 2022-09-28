@@ -8,7 +8,7 @@ export const LIMPIAR = "LIMPIAR";
 
 // CARGA PAISES DE API A BD
 export function cargaPaises() {
-    fetch("http://localhost:3001/countries")
+    fetch("https://countries-flo3.onrender.com/countries")
 };
 
 // CARGA EN STORE PAISES, DEPORTES, DEPORTE-PAISES, PAGINADO
@@ -17,7 +17,7 @@ export function cargaTodo() {
     dispatch(cargando());
     let deportPais = await deportPaises();
     let todosDeportes = await traerDeportes();
-    fetch(`http://localhost:3001/paisesIdDeport`)
+    fetch(`https://countries-flo3.onrender.com/paisesIdDeport`)
       .then((res) => res.json())
       .then((res) =>
         dispatch({
@@ -40,12 +40,12 @@ function cargando() {
 
 // TRAE LOS DEPORTES CON LOS PAISES --> la utiliza todosPaises
 function deportPaises() {
-  return fetch(`http://localhost:3001/deportIdPais`).then((res) => res.json());
+  return fetch(`https://countries-flo3.onrender.com/deportIdPais`).then((res) => res.json());
 }
 
 // TRAER TODOS LOS DEPORTES
 function traerDeportes() {
-  return fetch(`http://localhost:3001/deportes`).then((respuesta) =>
+  return fetch(`https://countries-flo3.onrender.com/deportes`).then((respuesta) =>
     respuesta.json()
   );
 }
@@ -73,7 +73,7 @@ function paginados(paises) {
 // DETALLE PAISES
 export function detallesPais(id) {
   return function (dispatch) {
-    fetch(`http://localhost:3001/countries/${id}`)
+    fetch(`https://countries-flo3.onrender.com/countries/${id}`)
       .then((r) => r.json())
       .then((r) => dispatch({ type: DETALLES_PAIS, payload: r }));
   };
@@ -100,7 +100,7 @@ export function postActividad({
 
   return function (dispatch) {
     dispatch(cargando());
-    return fetch("http://localhost:3001/activities", {
+    return fetch("https://countries-flo3.onrender.com/activities", {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
