@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+    /* background-image: url("../imagen/fondo.png");
+    background-repeat: no-repeat;
+   background-size:cover;
+   background-attachment: fixed; */
+}
+
+.principal {
+    display: grid;
+    min-height: 600px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.imagen {
+    justify-self: center;
+    border-radius: 10px;
+    width: 600px;
+}
+
+.boton {
+    text-decoration: none;
+    display: flex;
+    justify-self: center;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border-color: black;
+    color: black;
+    background: white;
+}
+
+.boton:hover {
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }
+

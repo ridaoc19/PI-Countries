@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-areas:    ". tarjetas  ."
+                             ". footer  .";
+}
+
+.tarjetas {
+    grid-area: tarjetas;
+}
+
+.footer {
+    grid-template-columns: repeat(28, 50px);
+    grid-area: footer;
+}
+
+
+.tarjetas {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: 200px 200px 200px 200px 200px ;
+    grid-template-areas:    " tarjetas tarjetas tarjetas tarjetas tarjetas "
+                            " tarjetas tarjetas tarjetas tarjetas tarjetas "
+                            " tarjetas tarjetas tarjetas tarjetas tarjetas ";
+}
+
+.tarjeta {
+    background: #E8F8F5;
+    /* margin: 10px; */
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 120px 50px 20px;
+    border-radius:5px
+    
+}
+
+.bandera {
+    border-radius:5px ;
+}
+
+
+.boton {
+    text-decoration: none;
+    color: black;
+}
+
+.boton:hover {
+    box-shadow: 9px 9px 33px #939292, -9px -9px 33px #7b7a7a;
+    transform: translateY(-2px);
+   }

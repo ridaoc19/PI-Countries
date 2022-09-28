@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.contenedor {
+
+    display: grid;
+    margin: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30px;
+    align-items: center;
+
+    grid-template-areas: "logo inicial principal actividad";
+}
+
+.inicial {
+    text-decoration: none;
+    grid-area: inicial;
+}
+
+.principal {
+    text-decoration: none;
+    grid-area: principal;
+}
+
+.actividad {
+    text-decoration: none;
+    grid-area: actividad;
+}
+
+.inicial,
+.principal,
+.actividad {
+    text-decoration: none;
+    display: flex;
+    justify-self: center;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border-color: black;
+    color: black;
+    background: white;
+}
+
+.inicial:hover{
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }
+
+.principal:hover{
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }
+
+.actividad:hover{
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }

@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: 200px 1fr 200px ;
+    grid-template-areas: ". contenedor .";
+}
+
+.contenedor {
+    grid-area: contenedor;
+}
+
+
+/* CONTENEDOR ///////////////////// */
+.principal .contenedor {
+    background: #e7f0f4;
+    display: grid;
+    grid-template-columns: 200px 300px 400px;
+    grid-template-areas:"contenedordeportes   contenedorpais  contenedordiligencia     "
+                        ".   .  contenedordiligencia"
+                        ".   .  contenedordiligencia"
+                        ".   .  contenedordiligencia"
+                        ".   .  contenedordiligencia"
+                        ".   .  contenedordiligencia"
+                        ".   .  contenedordiligencia";
+}
+
+.contenedordeportes {
+    
+    grid-area: contenedordeportes;
+}
+
+.contenedorpais {
+    grid-area: contenedorpais;
+}
+
+.contenedordiligencia {
+    grid-area: contenedordiligencia;
+}
+
+/* //////////////////////////////////////////////////7777777 */
+
+
+.contenedor .contenedordeportes {
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-areas: "buscad";
+}
+
+.buscad {
+    margin: 10px;
+    grid-area: buscad;
+}
+
+/* .resutadod {
+    margin: 10px;
+    grid-area: resutadod;
+} */
+
+.botond {
+    background-color: transparent;
+    width: 180px;
+    border: none; 
+    display: flex;
+    align-self: flex-end; 
+}
+
+.botond:hover {
+    background: #b7deef;
+    color: rgb(30, 29, 29);
+    border-radius: 5px;
+}
+
+/* ///////////////////////////////////////////////// */
+.contenedor .contenedorpais {
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-areas: "buscap"
+                        "resutadop";
+}
+
+.buscap {
+    margin: 10px;
+    grid-area: buscap;
+}
+
+/* .resutadop {
+    margin: 10px;
+    grid-area: resutadop;
+} */
+
+.botonp {
+    background-color: transparent;
+    width: 180px;
+    border: none; 
+    display: flex;
+    align-self: flex-end; 
+    padding: 3px;
+}
+
+.botonp:hover {
+    background: #b7deef;
+    color: rgb(30, 29, 29);
+    border-radius: 5px;
+}
+
+/* //////////////////////////////////////// */
+
+.contenedor .contenedordiligencia {
+  
+    display: grid;
+    gap: 10px;
+    /* max-width:  600px; */
+    grid-template-rows: 50px 40px 60px  ;
+    grid-template-areas: "nombredeporte nombredeporte"
+                        "temporada dificultad"
+                         "duracion enviar "
+                         "descripcion descripcion ";
+}
+
+.nombredeporte {
+    grid-area: nombredeporte;
+}
+
+.temporada {
+    grid-area: temporada;
+}
+
+.dificultad {
+    grid-area: dificultad;
+}
+
+.duracion {
+    grid-area: duracion;
+}
+
+.enviar {
+    grid-area: enviar;
+}
+
+.descripcion {
+    grid-area: descripcion;
+}  
+
+.renderizapais {
+
+    /* background: blueviolet; */
+    margin: 10px;
+}
+
+.nombredeporte,
+.temporada,
+.dificultad,
+.duracion,
+.enviar,
+.descripcion,
+.buscap,
+.buscad {
+    margin: 5px;
+    background: white;
+    border-radius: 10px;
+}
+
+
+
+/* //////////////////////////////////////////////// */
+
+.paiselecciona {
+    background: rgb(168, 231, 242);
+    display: grid;
+    margin: 10px;
+    padding: 3px;
+    grid-template-rows: 20px;
+    grid-template-areas: "imagenep nombrep botonep" ;
+}
+
+.imagenep {
+    align-self: center;
+    border-radius: 10px;
+    grid-area: imagenep;
+}
+
+.nombrep {
+    justify-self:flex-start;
+    align-self: center;
+    grid-area: nombrep;
+}
+
+.botonep {
+    width: 20px;
+    justify-self:end;
+    align-self: center;
+    grid-area: botonep;
+}
+
+
+
+

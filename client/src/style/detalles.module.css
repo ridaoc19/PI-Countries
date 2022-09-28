@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.pincipal {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: 250px 1fr 250px;
+    grid-template-areas: ". contenedor .";
+}
+
+.contenedor {
+    background: #E8FCF8;
+    grid-area: contenedor;
+}
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+.principal .contenedor {
+    display: grid;
+    grid-template-areas: "pais      pais     pais"
+        "pais      pais     pais"
+        "pais      pais     pais"
+        "pais      pais     pais"
+        "pais      pais     pais"
+        "deporte   deporte  deporte"
+        "deporte   deporte  deporte";
+}
+
+.contenedorpais {
+    grid-area: pais;
+}
+
+.deporte {
+    grid-area: deporte;
+}
+
+/* ////////////////////////////////////////////////////////777 */
+.contenedor .contenedorpais {
+    border-radius: 10px;
+    margin: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "bandera continente continente"
+        "bandera pais pais"
+        "bandera capital capital"
+        "bandera poblacion poblacion"
+        "bandera area area";
+}
+
+.bandera {
+    width: 150px;
+    border-radius: 10px;
+    justify-self: center;
+    align-self: center;
+    grid-area: bandera;
+}
+
+.continente {
+    background: white;
+    border-radius: 10px;
+    grid-area: continente;
+}
+
+.pais {
+    background: white;
+    border-radius: 10px;
+    grid-area: pais;
+}
+
+.capital {
+    background: white;
+    border-radius: 10px;
+    grid-area: capital;
+}
+
+.poblacion {
+    background: white;
+    border-radius: 10px;
+    grid-area: poblacion;
+}
+
+.area {
+    background: white;
+    border-radius: 10px;
+    grid-area: area;
+}
+
+.contenedorpais>p {
+    color: brown;
+}
+
+
+/* //////////////////////////////////////////////////////////77 */
+.contenedor .contenedordeporte {
+    display: grid;
+    margin: 10px;
+    gap: 20px;
+    grid-template-areas: "deporte deporte deporte"
+        "deporte deporte deporte"
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+.contenedor .contenedordeporte .deporte {
+    background: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 60px 20px 100px 1fr;
+    grid-template-areas: "nombre         nombre"
+        "dificultad     duracion"
+        "imagen         imagen"
+        "descripcion    descripcion";
+
+}
+
+.nombre {
+    grid-area: nombre;
+}
+
+.dificultad {
+    font: oblique bold 60% cursive;
+    grid-area: dificultad;
+}
+
+.duracion {
+    font: oblique bold 60% cursive;
+    grid-area: duracion;
+}
+
+.imagen {
+    justify-self: center;
+    align-self: center;
+    width: 150px;
+    border-radius: 5px;
+    grid-area: imagen;
+}
+
+.descripcion {
+    text-align: justify;
+    grid-area: descripcion;
+}
